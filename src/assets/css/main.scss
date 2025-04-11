@@ -1,0 +1,48 @@
+@use 'root' as *;
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+*, *::after, *::before {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $second-text-color;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 25px;
+
+    &:hover {
+        color: $second-text-hover;
+    }
+}
+
+h4 {
+  color: $second-text-color;
+  font-size: 30px;
+}
+
+label {
+  font-size: 32px;
+  color: $second-text-color;
+  font-weight: 600;
+}
+
